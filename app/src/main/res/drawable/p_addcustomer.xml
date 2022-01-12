@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+        android:viewportWidth="512"
+        android:viewportHeight="512"
+        android:width="512dp"
+        android:height="512dp">
+    <path
+            android:pathData="M277.333 245.333c35.307 0 63.787 -28.693 63.787 -64 0 -35.307 -28.48 -64 -63.787 -64 -35.307 0 -64 28.693 -64 64 0 35.307 28.694 64 64 64z"
+            android:fillColor="@color/bg_in_profile" />
+    <path
+            android:pathData="M384 245.333c35.307 0 63.787 -28.693 63.787 -64 0 -35.307 -28.48 -64 -63.787 -64 -6.827 0 -13.333 1.067 -19.52 3.093 12.053 17.28 19.307 38.293 19.307 60.907 0 22.613 -7.253 43.627 -19.307 60.907 6.187 2.027 12.693 3.093 19.52 3.093z"
+            android:fillColor="@color/bg_in_profile" />
+    <path
+            android:pathData="M277.333 288c-42.667 0 -128 21.333 -128 64l0 42.667 256 0 0 -42.667c0 -42.667 -85.333 -64 -128 -64z"
+            android:fillColor="@color/bg_in_profile" />
+    <path
+            android:pathData="M418.56 291.413C436.267 306.88 448 326.827 448 352l0 42.667 64 0 0 -42.667c0 -32.853 -50.667 -53.013 -93.44 -60.587z"
+            android:fillColor="@color/bg_in_profile" />
+    <path
+            android:pathData="M0 224l0 42.667 64 0 0 64 42.667 0 0 -64 64 0 0 -42.667 -64 0 0 -64 -42.667 0 0 64z"
+            android:fillColor="@color/bg_in_profile" />
+</vector>

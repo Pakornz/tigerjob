@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="activity_margin">16dp</dimen>
+    <dimen name="dot_margin_right">10dp</dimen>
+    <dimen name="msg_no_notes">26sp</dimen>
+    <dimen name="margin_top_no_notes">120dp</dimen>
+    <dimen name="lbl_new_note_title">20sp</dimen>
+    <dimen name="dimen_10">10dp</dimen>
+    <dimen name="input_new_note">20sp</dimen>
+    <dimen name="dot_height">30dp</dimen>
+    <dimen name="dot_text_size">40sp</dimen>
+    <dimen name="timestamp">14sp</dimen>
+    <dimen name="note_list_text">18sp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="alert_width">290dp</dimen>
+    <dimen name="common_circle_width">3dp</dimen>
+    <dimen name="progress_circle_radius">34dp</dimen>
+
+
+    <!-- main menu  -->
+    <dimen name="menu_item_padding_vertical">16dp</dimen>
+    <dimen name="menu_item_label_margin_top">8dp</dimen>
+    <dimen name="menu_item_icon_dimen">48dp</dimen>
+    <dimen name="menu_item_label_size">16sp</dimen>
+
+    <dimen name="step_icon_dimen">36dp</dimen>
+
+
+    <dimen name="container_radius">4dp</dimen>
+    <dimen name="container_padding_vertical">20dp</dimen>
+    <dimen name="container_padding_horizontal">10dp</dimen>
+    <dimen name="container_padding">8dp</dimen>
+
+    <!-- main menu item -->
+    <dimen name="main_menu_label">18sp</dimen>
+    <dimen name="main_menu_fab">90dp</dimen>
+    <dimen name="main_menu_bg_height">256dp</dimen>
+    <dimen name="main_menu_bg_right">-192dp</dimen>
+
+    <dimen name="sm_container_radius">5dp</dimen>
+
+
+    <!-- job List -->
+    <dimen name="task_list_title_size">18sp</dimen>
+    <dimen name="task_list_code_count_size">14sp</dimen>
+
+</resources>

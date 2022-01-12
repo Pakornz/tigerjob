@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:paddingTop="30dp"
+        android:paddingBottom="20dp"
+        android:orientation="vertical"
+        android:paddingEnd="30dp"
+        android:paddingStart="30dp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:src="@drawable/ic_user_card"
+            android:layout_width="120dp"
+            android:layout_height="120dp" />
+
+
+        <RelativeLayout
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:gravity="end"
+                android:layout_toStartOf="@+id/driver_name_colon"
+                android:text="รหัสพนักงาน"
+                android:textSize="18sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/driver_name_colon"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:text=":"
+                android:textSize="18sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:textColor="@color/bg_in_profile"
+                android:layout_toEndOf="@+id/driver_name_colon"
+                android:id="@+id/driver_name"
+                android:textSize="18sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:gravity="end"
+                android:layout_toStartOf="@+id/hand_held_id_colon"
+                android:text="ชื่อ - นามสกุล"
+                android:textSize="18sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/hand_held_id_colon"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:text=":"
+                android:textSize="18sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:textColor="@color/bg_in_profile"
+                android:layout_toEndOf="@+id/hand_held_id_colon"
+                android:id="@+id/hand_held_id"
+                android:textSize="18sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:gravity="end"
+                android:layout_toStartOf="@+id/route_id_colon"
+                android:text="หมดเวลาล็อคอิน"
+                android:textSize="18sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/route_id_colon"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:text=":"
+                android:textSize="18sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:textColor="@color/bg_in_profile"
+                android:layout_toEndOf="@+id/route_id_colon"
+                android:id="@+id/route_id"
+                android:textSize="18sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                          android:orientation="vertical"
+                          android:layout_width="match_parent"
+                          android:layout_height="match_parent">
+
+                <View
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@color/Grey300"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:textSize="16sp"
+                android:id="@+id/log_out"
+                android:text="ออกจากระบบ"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="10dp"
+                style="@style/dialog_red_button"
+                />
+
+            <Button
+                android:layout_marginStart="10dp"
+                android:textSize="16sp"
+                android:id="@+id/close"
+                android:text="ปิด"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="10dp"
+                style="@style/dialog_blue_button"
+                />
+
+        </LinearLayout>
+
+
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>

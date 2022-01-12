@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+    <string name="app_name">TIGER JOB</string>
+    <string name="action_settings">Settings</string>
+    <string name="activity_title_home">Notes</string>
+    <string name="msg_no_notes">No notes found!</string>
+    <string name="lbl_new_note_title">New Note</string>
+    <string name="lbl_edit_note_title">Edit Note</string>
+    <string name="hint_enter_note">Enter your note!</string>
+
+    <string name="popup_delete">Delete</string>
+    <string name="popup_edit">Edit</string>
+    <string name="delete_message">Delete Note</string>
+    <string name="delete_title">ARE YOU SURE ?</string>
+    <string name="List">List</string>
+    <string name="title_activity_login">Sign in</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="title_activity_register">Register</string>
+
+
+    <!--Scaan-->
+    <string name="dialog_default_title">Here\'s a message!</string>
+    <string name="dialog_ok">OK</string>
+    <string name="dialog_cancel">Cancel</string>
+    <string name="LOADING">Loading...</string>
+    <string name="title_activity_scanbarcode">ScanbarcodeActivity</string>
+
+
+    <!--Camera-->
+    <string name="uploadImages">Set your image</string>
+    <string name="msg_loading">Loading...</string>
+    <string name="buffering_string">Buffering&#8230;</string>
+    <string name="toast_message">Playback completed.</string>
+    <string name="pick_file">Pick file</string>
+    <string name="upload_file">Upload file</string>
+    <string name="toast_pick_file_error">Unable to pick file. Check status of file manager.</string>
+
+    <!--copyright-->
+    <string name="versionName">Version name</string>
+    <string name="copyright">©:year I.C.C. International Public Company Limited.</string>
+    <string name="copy_right">Tiger Distribution &amp; Logistics Co.,Ltd.</string>
+
+
+    <!--code list-->
+    <string name="txt_cannot_assign">ไม่สามารถมอบหมายงานได้</string>
+    <string name="txt_assigning_job">กำลังรับงานต่อ…</string>
+    <string name="txt_confirm_assign_job">ยืนยันการรับงานต่อ</string>
+    <string name="label_assign_status">สถานะ : </string>
+    <string name="assign_status_n">ยังไม่ได้รับงาน</string>
+    <string name="assign_status_s">รับงานเเล้ว</string>
+    <string name="assign_job">รับงาน</string>
+    <string name="txt_delete_all">ทั้งหมด</string>
+    <string name="txt_delete_all_in_task">ลบทั้งหมดของงาน</string>
+    <string name="txt_delete_all_in_date">ทั้งหมดของวันนี้</string>
+    <string name="txt_show_all">แสดงทั้งหมด</string>
+    <string name="txt_show">แสดง</string>
+    <string name="txt_assign_result">ผลการรับงาน</string>
+    <string name="cancel_txt">ยกเลิก</string>
+    <string name="confirm_txt">ยืนยัน</string>
+    <string name="ok_txt">ตกลง</string>
+    <string name="txt_job">งาน</string>
+    <string name="scan_barcode">TIGER JOB</string>
+    <string name="s_progress">กำลังตรวจสอบข้อมูล</string>
+
+
+    <!--Other string resources also defined in this file… -->
+    <string-array name="city_list">
+        <item>SAHA</item>
+        <item>BGW</item>
+    </string-array>
+
+    <!--Other string resources also defined in this file… -->
+    <string-array name="type_list">
+        <item>D</item>
+        <item>F</item>
+
+    </string-array>
+
+    <!--map-->
+    <!--<string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">AIzaSyCMW9-y4gEFKW2M_OOH7fUx8cmnj4aEL8s</string>-->
+
+    <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">AIzaSyAHxc4gJf1Er2UE2hvpWnv6K_lE9AGHZCU</string>
+
+
+
+
+</resources>

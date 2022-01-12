@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:card_view="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <android.support.v7.widget.CardView
+                android:layout_marginTop="5dp"
+                android:id="@+id/cardview"
+                style="@style/main_menu_item"
+                card_view:cardBackgroundColor="#fff"
+                card_view:cardCornerRadius="10dp"
+                card_view:cardElevation="2dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            <LinearLayout
+                    android:layout_marginHorizontal="0dp"
+                    android:layout_gravity="start"
+                    android:padding="@dimen/dimen_10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                <ImageView
+                        android:id="@+id/dddd"
+                        android:layout_gravity="start"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/p_search2"
+                        android:padding="5dp"/>
+
+                <LinearLayout
+                        android:layout_marginHorizontal="10dp"
+                        android:layout_gravity="start"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                    <TextView
+                            android:id="@+id/country_name1"
+                            android:textSize="14sp"
+                            android:gravity="start"
+                            android:text="TDL61147"
+                            android:singleLine="true"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="4dp"
+                            android:paddingBottom="3dp"/>
+
+                    <FrameLayout
+                            android:layout_marginTop="2dp"
+                            android:layout_marginBottom="2dp"
+                            android:layout_marginEnd="0dp"
+                            android:layout_marginStart="0dp"
+                            android:layout_height="2dp"
+                            android:layout_gravity="center"
+                            style="@style/horizontal_line"
+                            android:layout_width="match_parent"/>
+
+                    <TextView
+                            android:id="@+id/country_name2"
+                            android:textSize="12sp"
+                            android:gravity="start"
+                            android:text="Pakorn Sudjit"
+                            android:singleLine="true"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="2dp"/>
+
+                    <TextView
+                            android:id="@+id/country_name3"
+                            android:textSize="12sp"
+                            android:gravity="start"
+                            android:text="0877316063"
+                            android:ellipsize="end"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="1dp"
+                            android:paddingBottom="3dp"/>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </android.support.v7.widget.CardView>
+
+
+    </ScrollView>
+
+
+</LinearLayout>

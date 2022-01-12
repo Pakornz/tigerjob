@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark" >
+
+    <RelativeLayout
+        android:paddingBottom="30dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:src="@drawable/ic_load_box"
+            android:layout_marginBottom="10dp"
+            android:id="@+id/logo"
+            android:layout_centerHorizontal="true"
+            android:layout_width="96dp"
+            android:layout_height="96dp" />
+
+        <TextView
+            android:layout_below="@+id/logo"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/prompt"
+            android:textSize="36sp"
+            android:textColor="@color/whiteSmoke"
+            android:id="@+id/app_name_text"
+            android:text="@string/scan_barcode" />
+
+        <TextView
+            android:fontFamily="@font/prompt"
+            android:textSize="20sp"
+            android:id="@+id/app_progress_text"
+            android:text="@string/s_progress"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/whiteSmoke"
+            android:layout_below="@+id/app_name_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+    <!--/Menu layout-->
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <TextView
+            android:textColor="@color/white"
+            android:paddingBottom="8dp"
+            android:paddingTop="8dp"
+            android:gravity="center"
+            android:id="@+id/copyrightTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/copyright"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </android.support.constraint.ConstraintLayout>
+
+
+</RelativeLayout>

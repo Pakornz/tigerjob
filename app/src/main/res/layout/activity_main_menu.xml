@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/colorMainBackground"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/header_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RelativeLayout
+                android:paddingBottom="8dp"
+                android:background="@color/BlueGrey50"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:paddingTop="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            <ImageView
+                    android:layout_marginLeft="8dp"
+                    android:id="@+id/logo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:scaleType="fitStart"
+                    android:src="@drawable/ic_tiger_logo" />
+
+            <FrameLayout
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginBottom="0dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_below="@+id/logo"
+                    android:id="@+id/line_hr"
+                    android:layout_height="2dp"
+                    android:background="@color/ASBESTOS"
+                    android:layout_width="match_parent"  />
+
+            <TextView
+                    android:layout_marginRight="15dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/line_hr"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/prompt"
+                    android:gravity="center"
+                    android:text="TIGER JOB"
+                    android:textSize="24sp" />
+
+        </RelativeLayout>
+
+
+    </android.support.constraint.ConstraintLayout>
+
+
+    <LinearLayout
+        android:id="@+id/menu_container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="6dp"
+        android:orientation="vertical"
+        android:paddingTop="2dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/copyrightTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/header_layout">
+
+
+        <!-- row 1 menu -->
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"  >
+            <android.support.v7.widget.CardView
+                    android:onClick="onClick"
+                    android:id="@+id/menu1"
+                    android:layout_marginRight="4dp"
+                    android:layout_marginLeft="8dp"
+                    style="@style/main_menu_item" >
+
+                <LinearLayout
+                        android:paddingBottom="@dimen/menu_item_padding_vertical"
+                        android:paddingTop="@dimen/menu_item_padding_vertical"
+                        android:orientation="vertical"
+                        android:background="@color/White"
+                        android:layout_centerHorizontal="true"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                    <ImageView
+                            android:src="@drawable/p_signature"
+                            android:layout_width="@dimen/menu_item_icon_dimen"
+                            android:layout_height="@dimen/menu_item_icon_dimen" />
+
+                    <TextView
+                            android:textSize="@dimen/menu_item_label_size"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/menu_item_label_margin_top"
+                            android:fontFamily="@font/prompt"
+                            android:text="สร้างงาน" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+
+            <android.support.v7.widget.CardView
+                    android:onClick="onClick"
+                    android:id="@+id/menu2"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginStart="4dp"
+                    style="@style/main_menu_item" >
+
+                <LinearLayout
+                        android:paddingBottom="@dimen/menu_item_padding_vertical"
+                        android:paddingTop="@dimen/menu_item_padding_vertical"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                    <ImageView
+                            android:src="@drawable/p_addcustomer"
+                            android:layout_width="@dimen/menu_item_icon_dimen"
+                            android:layout_height="@dimen/menu_item_icon_dimen" />
+
+                    <TextView
+                            android:textSize="@dimen/menu_item_label_size"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/menu_item_label_margin_top"
+                            android:fontFamily="@font/prompt"
+                            android:text="เพิ่มลูกค้าใหม่" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+
+        <!-- row 2 menu -->
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"  >
+            <android.support.v7.widget.CardView
+                    android:onClick="onClick"
+                    android:id="@+id/menu3"
+                    android:layout_marginRight="4dp"
+                    android:layout_marginLeft="8dp"
+                    style="@style/main_menu_item" >
+
+                <LinearLayout
+                        android:paddingBottom="@dimen/menu_item_padding_vertical"
+                        android:paddingTop="@dimen/menu_item_padding_vertical"
+                        android:orientation="vertical"
+                        android:background="@color/White"
+                        android:layout_centerHorizontal="true"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                    <ImageView
+                            android:src="@drawable/p_listreport2"
+                            android:layout_width="@dimen/menu_item_icon_dimen"
+                            android:layout_height="@dimen/menu_item_icon_dimen" />
+
+                    <TextView
+                            android:textSize="@dimen/menu_item_label_size"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/menu_item_label_margin_top"
+                            android:fontFamily="@font/prompt"
+                            android:text="งานที่สร้าง" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+
+            <android.support.v7.widget.CardView
+                    android:onClick="onClick"
+                    android:id="@+id/menu4"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginStart="4dp"
+                    style="@style/main_menu_item" >
+
+                <LinearLayout
+                        android:paddingBottom="@dimen/menu_item_padding_vertical"
+                        android:paddingTop="@dimen/menu_item_padding_vertical"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                    <ImageView
+                            android:src="@drawable/p_listreport2"
+                            android:layout_width="@dimen/menu_item_icon_dimen"
+                            android:layout_height="@dimen/menu_item_icon_dimen" />
+
+                    <TextView
+                            android:textSize="@dimen/menu_item_label_size"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/menu_item_label_margin_top"
+                            android:fontFamily="@font/prompt"
+                            android:text="ลูกค้าที่สร้าง" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+
+    </LinearLayout>
+    <!--/Menu layout-->
+
+    <TextView
+            android:textColor="@color/ASBESTOS"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            android:gravity="center"
+            android:id="@+id/versionText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:text="Version "
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/copyrightTextView"/>
+
+
+    <TextView
+        android:textColor="@color/ASBESTOS"
+        android:paddingTop="4dp"
+        android:paddingBottom="4dp"
+        android:gravity="center"
+        android:id="@+id/copyrightTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:text="@string/copyright"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

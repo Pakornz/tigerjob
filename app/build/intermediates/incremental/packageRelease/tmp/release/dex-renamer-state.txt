@@ -1,0 +1,4 @@
+#Fri Jun 21 11:38:34 ICT 2019
+base.0=D\:\\WorkSpace\\WorkPaiz\\Workreal\\Tigerjob\\app\\build\\intermediates\\transforms\\dexMerger\\release\\0
+path.0=classes.dex
+renamed.0=classes.dex

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto"
+      xmlns:tools="http://schemas.android.com/tools">
+    <!--<item-->
+    <!--android:id="@+id/action_settings"-->
+    <!--android:orderInCategory="100"-->
+    <!--android:title="@string/action_settings"-->
+    <!--app:showAsAction="never" />-->
+
+    <!--<item-->
+    <!--android:id="@+id/action_logout"-->
+    <!--android:orderInCategory="100"-->
+    <!--android:title="Log out"-->
+    <!--app:showAsAction="never" />-->
+
+    <!--<item-->
+            <!--android:icon="@drawable/ic_avatar"-->
+            <!--android:id="@+id/user"-->
+            <!--android:title="@string/action_settings"-->
+            <!--app:showAsAction="always" />-->
+
+    <!--<item-->
+            <!--android:icon="@drawable/p_mat_group"-->
+            <!--app:showAsAction="always"-->
+            <!--android:title="@string/action_settings"-->
+            <!--android:id="@+id/setting"-->
+    <!--/>-->
+
+</menu>

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+         xmlns:app="http://schemas.android.com/apk/res-auto"
+         android:layout_width="match_parent"
+         android:id="@+id/activity_received_list"
+         android:layout_height="match_parent">
+
+    <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/app_bar_layout"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <android.support.v7.widget.Toolbar
+                android:id="@+id/navigation_bar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@color/white"
+                android:weightSum="1"
+                app:contentInsetStart="0dp">
+
+            <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1.03"
+                    android:touchscreenBlocksFocus="true"
+                    android:transitionGroup="false">
+
+                <ImageView
+
+                        android:clickable="true"
+                        android:tint="@color/colorAccent"
+                        android:src="@drawable/p_arrow_left"
+                        android:background="?attr/actionBarItemBackground"
+                        android:layout_width="?attr/actionBarSize"
+                        android:layout_height="match_parent"
+                        android:scaleType="centerInside"
+                        android:id="@+id/go_prev"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"/>
+
+
+                <ImageView
+                        android:clickable="true"
+                        android:tint="@color/colorAccent"
+                        android:src="@drawable/p_arrow_right"
+                        android:background="?attr/actionBarItemBackground"
+                        android:layout_width="?attr/actionBarSize"
+                        android:layout_height="match_parent"
+                        android:scaleType="centerInside"
+                        android:id="@+id/go_next"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentTop="true"/>
+
+                <LinearLayout
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentStart="true">
+
+                    <TextView
+                            android:background="?attr/actionBarItemBackground"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="20sp"
+                            android:paddingEnd="10dp"
+                            android:paddingStart="10dp"
+                            android:gravity="center"
+                            android:text="26/01/2561"
+                            android:ellipsize="end"
+                            android:drawablePadding="15dp"
+                            android:drawableStart="@drawable/p_calendar"
+                            android:clickable="true"
+                            android:id="@+id/date_display"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent" />
+
+                </LinearLayout>
+            </RelativeLayout>
+
+        </android.support.v7.widget.Toolbar>
+
+
+    </android.support.design.widget.AppBarLayout>
+
+    <RelativeLayout
+            android:layout_below="@+id/app_bar_layout"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+        <android.support.v7.widget.RecyclerView
+                android:layout_marginBottom="10dp"
+                android:paddingTop="10dp"
+                android:id="@+id/bill_list_recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scrollbars="vertical" />
+
+        <TextView
+                android:visibility="gone"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="36sp"
+                android:id="@+id/empty_text"
+                android:text="ไม่มีข้อมูล"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                style="@android:style/TextAppearance.Large"
+                android:gravity="center"
+        />
+
+
+
+
+
+    </RelativeLayout>
+
+
+</android.support.design.widget.CoordinatorLayout>

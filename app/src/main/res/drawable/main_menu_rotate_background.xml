@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@color/colorPrimaryDark"/>
+    <item>
+        <bitmap
+            android:src="@drawable/main_menu_background"
+            android:gravity="center"
+            android:alpha=".5"/>
+    </item>
+    <item
+        android:top="305dp"
+        android:bottom="-256dp"
+        android:left="0dp"
+        android:right="@dimen/main_menu_bg_right">
+        <rotate
+            android:fromDegrees="-8"
+            android:pivotX="0%"
+            android:pivotY="100%">
+            <shape
+                android:shape="rectangle">
+                <solid
+                    android:color="@color/colorMainBackground"/>
+            </shape>
+        </rotate>
+    </item>
+</layer-list>

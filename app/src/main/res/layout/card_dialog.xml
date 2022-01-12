@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+    <LinearLayout
+            android:paddingTop="30dp"
+            android:paddingBottom="20dp"
+            android:orientation="vertical"
+            android:paddingEnd="30dp"
+            android:paddingStart="30dp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <android.support.design.widget.TabLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:id="@+id/tablayout"
+                android:background="#eae8e8"
+                android:minHeight="?attr/actionBarSize"
+                app:tabTextColor="#848484"
+                android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        </android.support.design.widget.TabLayout>
+
+        <ImageView
+                android:id="@+id/qrcode"
+                android:visibility="visible"
+                android:layout_width="200dp"
+                android:layout_height="200dp" />
+
+        <ImageView
+                android:id="@+id/barcode"
+                android:visibility="gone"
+                android:layout_width="300dp"
+                android:layout_height="200dp" />
+
+        <RelativeLayout
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            <!--<TextView-->
+                    <!--android:id="@+id/driver_name_colon"-->
+                    <!--android:gravity="end"-->
+                    <!--android:text="รหัสงาน : "-->
+                    <!--android:textSize="18sp"-->
+                    <!--android:paddingLeft="25dp"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content" />-->
+
+            <!--<TextView-->
+                    <!--android:id="@+id/driver_name_colon"-->
+                    <!--android:layout_centerHorizontal="true"-->
+                    <!--android:layout_marginStart="5dp"-->
+                    <!--android:layout_marginEnd="5dp"-->
+                    <!--android:text=":"-->
+                    <!--android:textSize="18sp"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content" />-->
+
+            <TextView
+                    android:layout_centerHorizontal="true"
+                    android:id="@+id/driver_name"
+                    android:textSize="18sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                          android:orientation="vertical"
+                          android:layout_width="match_parent"
+                          android:layout_height="match_parent">
+
+                <View
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@color/Grey300"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+                android:orientation="horizontal"
+                android:gravity="center_horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            <Button
+                    android:textSize="16sp"
+                    android:id="@+id/close"
+                    android:text="ปิด"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="10dp"
+                    style="@style/dialog_blue_button"
+            />
+
+        </LinearLayout>
+
+
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>
